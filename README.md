@@ -21,7 +21,7 @@ let temp = current
 
 current.next()
 
-temp // has change
+temp // has changed
 ```
 
 而 `fiber` 由于直接暴露出 `current` 指针，可以随时`访问`和`存储`当前 `断点`。
@@ -32,7 +32,7 @@ let temp
 while (fiber) {
   current = fiber
 
-  fiber.type() // if temp = current, temp will not change following the current.
+  fiber.type() // if temp = current, temp will not change with the current.
 
   collect(fiber)
 
